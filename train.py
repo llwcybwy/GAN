@@ -11,6 +11,7 @@ from tqdm import tqdm
 from torchvision.utils import save_image
 from discriminator_model import Discriminator
 from generator_model import Generator
+
 def train_fn(disc_P, disc_M, gen_P, gen_M, loader, opt_disc, opt_gen, l1, mse, d_scaler, g_scaler):
     loop= tqdm(loader,leave=True)    # progress bar
     for idx, (monet,photo) in enumerate(loop):
