@@ -33,4 +33,4 @@ class PhotoMonetDataset(Dataset):
             photo_img = augmentations["image"]
             monet_img = augmentations["image0"]
 
-        return photo_img, monet_img
+        return monet_img, photo_img
