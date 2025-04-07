@@ -186,25 +186,25 @@ def main():
     mse = nn.MSELoss()
     # These checkpoint files allow the training process to resume from where it left off, without starting over from scratch.
     if config.LOAD_MODEL:
-        load_checkpoint('Output/Training_parameters/3/genh.pth.tar'
+        load_checkpoint('Output/Training_parameters/8/genp.pth.tar'
             ,
             gen_P,
             opt_gen,
             config.LEARNING_RATE,
         )
-        load_checkpoint('Output/Training_parameters/3/genz.pth.tar'
+        load_checkpoint('Output/Training_parameters/8/genm.pth.tar'
             ,
             gen_M,
             opt_gen,
             config.LEARNING_RATE,
         )
-        load_checkpoint('Output/Training_parameters/3/critich.pth.tar'
+        load_checkpoint('Output/Training_parameters/8/criticp.pth.tar'
             ,
             disc_P,
             opt_disc,
             config.LEARNING_RATE,
         )
-        load_checkpoint('Output/Training_parameters/3/criticz.pth.tar'
+        load_checkpoint('Output/Training_parameters/8/criticm.pth.tar'
             ,
             disc_M,
             opt_disc,
@@ -252,7 +252,7 @@ def main():
     CMMD_Monet = []
     CMMD_Photo = []
 
-    for epoch in range(4,7):
+    for epoch in range(9,11):
         print(f"Epoch {epoch}:")
         print("Training...")
         train_fn(

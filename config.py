@@ -5,7 +5,7 @@ from albumentations.pytorch import ToTensorV2
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 TRAIN_DIR = "Data/train"
 VAL_DIR = "Data/val"
-BATCH_SIZE = 1
+BATCH_SIZE = 1/.,xnbvc
 LEARNING_RATE = 1e-5
 LAMBDA_IDENTITY = 5
 LAMBDA_CYCLE = 10
