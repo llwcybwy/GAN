@@ -4,4 +4,4 @@ Written by Joakim Colpier and Jeroen Verweij for the course EE4685 Machine Learn
 
 ## Description
 
-Creating a simple cycleGAN using real images and Monet pictures. See presentation for more details.
+Creating a simple cycleGAN using real images and Monet pictures. See presentation and report for more details.
